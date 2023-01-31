@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disposicion de elementos en CSS</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	<div class="imagenes-1" id="imagenes" alt="imagen de juego">
+	  <img src="micraf.png" alt="imagen de juego">
+	  <img src="ps3.png" alt="imagen de juego">
+	  <img src="call of duty.png" alt="imagen de juego">
+	  <img src="dragon ball.png" alt="imagen de juego">
+	  <img src="far cry.png" alt="imagen de juego">
+	  <img src="GodofWar.png" alt="imagen de juego">
+    </div>
+
+</body>
+</html>
+CSS
+*{
+padding: 0;
+margin: 0;
+width: 100vh;
+
+}
+
+.imagenes-1{
+ width: 300px;
+ display: flex;
+}
+
+@media only screen and (max-width:50vh){
+	.imagnes-1{
+		width: 150px;
+		flex-wrap: wrap;
+	}
+}
